@@ -1,4 +1,4 @@
-## RMM
+## RMM-02
 
 
 Minimal monolithic smart contract that is an AMM using the RMM trading function.
