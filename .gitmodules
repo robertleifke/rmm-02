@@ -4,9 +4,6 @@
 [submodule "lib/solstat"]
 	path = lib/solstat
 	url = https://github.com/primitivefinance/solstat
-[submodule "lib/pendle-core-v2-public"]
-	path = lib/pendle-core-v2-public
-	url = https://github.com/pendle-finance/pendle-core-v2-public
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
@@ -15,3 +12,6 @@
 	path = lib/openzeppelin-contracts-upgradeable
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable
 	branch = "release-v4.9"
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/Rari-Capital/solmate

@@ -1,12 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity ^0.8.13;
 
-import {SafeTransferLib} from "solmate/utils/SafeTransferLib.sol";
-import {PYIndexLib, PYIndex} from "pendle/core/StandardizedYield/PYIndex.sol";
-import {IPPrincipalToken} from "pendle/interfaces/IPPrincipalToken.sol";
-import {IStandardizedYield} from "pendle/interfaces/IStandardizedYield.sol";
-import {IPYieldToken} from "pendle/interfaces/IPYieldToken.sol";
-import "forge-std/console2.sol";
+import {SafeTransferLib} from "lib/solmate/src/utils/SafeTransferLib.sol";
+import {console2} from "lib/forge-std/src/console2.sol";
 
 import "./lib/RmmLib.sol";
 import "./lib/RmmErrors.sol";
@@ -17,14 +13,7 @@ contract RMM is ERC20 {
     using FixedPointMathLib for uint256;
     using FixedPointMathLib for int256;
 
-    using PYIndexLib for IPYieldToken;
-    using PYIndexLib for PYIndex;
-
     using SafeTransferLib for ERC20;
-
-    IPPrincipalToken public PT;
-    IStandardizedYield public SY;
-    IPYieldToken public YT;
 
     uint256 public sigma;
     uint256 public fee;
@@ -37,9 +26,6 @@ contract RMM is ERC20 {
 
     uint256 public lastTimestamp;
     uint256 public lastImpliedPrice;
-
-    uint256 private SY_scalar;
-    uint256 private PT_scalar;
 
     uint256 private _lock = 1;
 

@@ -6,6 +6,5 @@ openzeppelin-contracts/=lib/openzeppelin-contracts/
 openzeppelin/=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable=lib/openzeppelin-contracts-upgradeable/contracts
-pendle=lib/pendle-core-v2-public/contracts/
 solmate/=lib/solstat/lib/solmate/src/
 solstat/=lib/solstat/src/
